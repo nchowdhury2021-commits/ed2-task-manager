@@ -1,16 +1,46 @@
-# React + Vite
+ED2 Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple task management web app built for FAU's Engineering Design 2 course, using AI-assisted development tools as taught in the AI Hootcamp lectures.
 
-Currently, two official plugins are available:
+Live app: https://glittering-hamster-d6bdb5.netlify.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+What It Does
 
-## React Compiler
+Task Manager lets users register an account, log in, and manage a personal to-do list. Each user only sees and can modify their own tasks — data is scoped per-account using Firebase Authentication and Firestore security rules.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Features:
 
-## Expanding the Oxlint configuration
+User registration, login, and logout (Firebase Authentication)
+Create, read, update, and delete tasks (Firestore)
+Mark tasks complete/incomplete
+Real-time sync — changes reflect instantly without a page refresh
+Per-user data isolation enforced via Firestore security rules
+Technologies Used
+Frontend: React (Vite)
+Routing: React Router
+Backend/Database: Firebase (Authentication + Firestore)
+Deployment: Netlify
+Version control: Git/GitHub
+Setup Instructions
+Clone the repository:
+   git clone https://github.com/nchowdhury2021-commits/ed2-task-manager.git
+   cd ed2-task-manager
+Install dependencies:
+   npm install
+Create a .env.local file in the project root with your own Firebase project config:
+   VITE_FIREBASE_API_KEY=your_api_key
+   VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
+   VITE_FIREBASE_PROJECT_ID=your_project_id
+   VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+   VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+   VITE_FIREBASE_APP_ID=your_app_id
+Run the development server:
+   npm run dev
+Open http://localhost:5173 in your browser.
+Demo Video
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+[Link to demo video] — coming soon
+
+Author
+
+Naqib Chowdhury — FAU Engineering Design 2
