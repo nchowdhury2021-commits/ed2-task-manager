@@ -1,4 +1,4 @@
-# ED2 Task Manager
+# Task Ledger (ED2 Task Manager)
 
 A simple task management web app built for FAU's Engineering Design 2 course, using AI-assisted development tools as taught in the AI Hootcamp lectures.
 
@@ -6,12 +6,13 @@ A simple task management web app built for FAU's Engineering Design 2 course, us
 
 ## What It Does
 
-Task Manager lets users register an account, log in, and manage a personal to-do list. Each user only sees and can modify their own tasks — data is scoped per-account using Firebase Authentication and Firestore security rules.
+Task Ledger lets users register an account, log in, and manage a personal to-do list. Each user only sees and can modify their own tasks — data is scoped per-account using Firebase Authentication and Firestore security rules.
 
 **Features:**
 - User registration, login, and logout (Firebase Authentication)
 - Create, read, update, and delete tasks (Firestore)
 - Mark tasks complete/incomplete
+- Set a due date and priority level per task
 - Real-time sync — changes reflect instantly without a page refresh
 - Per-user data isolation enforced via Firestore security rules
 
@@ -51,7 +52,7 @@ Task Manager lets users register an account, log in, and manage a personal to-do
 
 ## Demo Video
 
-[Link to demo video] — coming soon
+https://www.youtube.com/watch?v=E2Mj-UYHnd8
 
 ## Author
 
